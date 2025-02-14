@@ -1,0 +1,90 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  // "base_keymap": "VSCode",
+  "vim_mode": true,
+  "ui_font_size": 11.5,
+  "buffer_font_size": 11.5,
+  "buffer_line_height": {
+    "custom": 1.4
+  },
+  "relative_line_numbers": true,
+  "cursor_blink": false,
+  "scroll_beyond_last_line": "vertical_scroll_margin",
+  "vertical_scroll_margin": 3,
+  "scrollbar": {
+    "show": "never"
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false
+  },
+  "gutter": {
+    "code_actions": false,
+    "runnables": false,
+    "folds": false
+  },
+  "terminal": {
+    "toolbar": {
+      "breadcrumbs": false
+    }
+  },
+  "buffer_font_family": "Monaspace Krypton",
+  "buffer_font_weight": 500,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Solarized Dark"
+  },
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true,
+    "edit_debounce_ms": 700,
+    "scroll_debounce_ms": 50
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 500
+    }
+  },
+  "languages": {
+    "Python": {
+      "language_servers": ["ruff", "pyright"],
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "code_actions": {
+            "source.organizeImports.ruff": true,
+            "source.fixAll.ruff": true
+          }
+        },
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ]
+    }
+  },
+  "lsp": {
+    "pyright": {
+      "settings": {
+        "python": {
+          "venvPath": ".",
+          "pythonPath": "./.venv/bin/python",
+          "analysis": {
+            "extraPaths": ["."]
+          }
+        }
+      }
+    }
+  }
+}
