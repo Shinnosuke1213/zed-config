@@ -14,6 +14,24 @@
   "buffer_line_height": {
     "custom": 1.4
   },
+  "buffer_font_family": "Monaspace Neon Var",
+  "buffer_font_weight": 500,
+  "buffer_font_features": {
+    "calt": true,
+    "liga": true,
+    "ss01": true,
+    "ss02": true,
+    "ss03": true,
+    "ss04": true,
+    "ss05": true,
+    "ss06": true,
+    "ss07": true,
+    "ss08": true,
+    "ss09": true,
+    "ss10": true,
+    "cv01": 2,
+    "cv31": true
+  },
   "relative_line_numbers": true,
   "cursor_blink": false,
   "scroll_beyond_last_line": "vertical_scroll_margin",
@@ -35,8 +53,7 @@
       "breadcrumbs": false
     }
   },
-  "buffer_font_family": "Monaspace Krypton",
-  "buffer_font_weight": 500,
+
   "theme": {
     "mode": "system",
     "light": "One Light",
